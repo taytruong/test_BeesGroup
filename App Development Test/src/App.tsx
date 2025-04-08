@@ -20,9 +20,7 @@ function App() {
         }
         const data = await response.json();
         if (!data.results || !Array.isArray(data.results)) {
-          throw new Error(
-            "Invalid data format: results is missing or not an array"
-          );
+          throw new Error("Invalid data");
         }
         const fetchUsers: TUser[] = data.results.map(
           (user: any, index: number) => ({

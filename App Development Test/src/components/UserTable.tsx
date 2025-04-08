@@ -9,7 +9,6 @@ import {
   Input,
   Switch,
   Popconfirm,
-  message,
 } from "antd";
 import { ColumnsType } from "antd/es/table";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
@@ -121,6 +120,8 @@ export default function UserTable({ data, onEdit, onDelete }: Props) {
       ],
       onFilter: (value: boolean | Key, record: TUser) =>
         record.active === value,
+      sorter: (a: TUser, b: TUser) =>
+        a.active === b.active ? 0 : a.active ? -1 : 1,
     },
     {
       title: "ACTION",
