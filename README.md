@@ -6,11 +6,13 @@
 
 # tham khảo : Grok, Antd solution, ...
 
-Logic Test : chú thích ở trong processWithDeplay.ts
+    + Logic Test : chú thích ở trong processWithDeplay.ts
 
-App Development Test: + Dùng Antd để có lấy Table và ColumnsType + Gồm có sort (name , balance, registration, ) và filter (name, status) + Field Action có edit và delete  
- . Edit item trên UI -> ShowModal
-. Delete item trên UI + Scroll cố định scroll={{ x: true, y: 700 }} chưa đúng yêu cầu (infinite scroll)
+    + App Development Test: + Dùng Antd để có lấy Table và ColumnsType
+    + Gồm có sort (name, balance, registration, ) và filter (name, status)
+    + Field Action có edit và delete
+    . Edit item trên UI -> ShowModal
+    . Delete item trên UI + Scroll cố định scroll={{ x: true, y: 700 }} chưa đúng yêu cầu (infinite scroll)
 
     + Fecth API : https://randomuser.me/api/?results=150
         . data map theo TUser[]
